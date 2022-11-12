@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <import resource="bean.xml"/>
+    <bean id="hello" class="learn.gu.com.pojo.Hello" >
+        <constructor-arg index="0" value="北京市"/>
+    </bean>
+
+    <bean id="student" class="learn.gu.com.pojo.Student">
+        <property name="name" value="张三"/>
+        <property name="address" ref="address"/>
+        <property name="books">
+            <list>
+               <value>java</value>
+               <value>c++</value>
+            </list>
+        </property>
+        <property name="hobbies">
+            <array>
+                <value>敲代码</value>
+                <value>改BUG</value>
+            </array>
+        </property>
+        <property name="card">
+            <map>
+                <entry key="name" value="拉拉"/>
+                <entry key="age" value="18"/>
+            </map>
+        </property>
+        <property name="games">
+            <set>
+                <value>11</value>
+                <value>22</value>
+                <value>22</value>
+            </set>
+        </property>
+        <property name="wife">
+            <null></null>
+        </property>
+        <property name="info">
+            <props>
+                <prop key="ID">0001</prop>
+                <prop key="IDTYPE">1</prop>
+            </props>
+        </property>
+    </bean>
+
+    <bean id="address" class="learn.gu.com.pojo.Address">
+        <property name="address" value="北京市丰台区"/>
+    </bean>
+</beans>
