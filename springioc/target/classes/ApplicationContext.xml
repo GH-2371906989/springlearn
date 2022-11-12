@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:p="http://www.springframework.org/schema/p"
        xsi:schemaLocation="http://www.springframework.org/schema/beans
         https://www.springframework.org/schema/beans/spring-beans.xsd">
 
@@ -9,8 +10,7 @@
         <constructor-arg index="0" value="北京市"/>
     </bean>
 
-    <bean id="student" class="learn.gu.com.pojo.Student">
-        <property name="name" value="张三"/>
+    <bean id="student" class="learn.gu.com.pojo.Student" p:name="张三">
         <property name="address" ref="address"/>
         <property name="books">
             <list>
