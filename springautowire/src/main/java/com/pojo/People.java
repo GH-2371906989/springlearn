@@ -14,6 +14,7 @@ import org.springframework.stereotype.Component;
 @AllArgsConstructor
 @NoArgsConstructor
 @ToString
+@Component
 public class People {
     @Autowired
     private Cat cat;
