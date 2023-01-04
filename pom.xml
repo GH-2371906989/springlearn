@@ -14,6 +14,8 @@
         <module>springaop</module>
         <module>mybatis</module>
         <module>springmvc</module>
+        <module>ssm</module>
+        <module>stream</module>
     </modules>
 
 

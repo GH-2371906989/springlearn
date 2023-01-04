@@ -10,9 +10,11 @@
         <outputRelativeToContentRoot value="true" />
         <module name="springioc" />
         <module name="springautowire" />
+        <module name="stream" />
         <module name="springaop" />
-        <module name="springmvc" />
         <module name="mybatis" />
+        <module name="ssm" />
+        <module name="springmvc" />
       </profile>
     </annotationProcessing>
   </component>
